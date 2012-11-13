@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSSRulesExample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+
+    <!-- CSSRulesExample references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <header>
+        <h1>This is my header statement. Impressive, I know.</h1>
+    </header>
+    <h2>This is a header 2 element. It will be styled by a Type Selector:
+         h2 { }</h2>
+    <div id="myID">This is a div that has an id: myID.  This will be styled by an
+         ID Selector #myID { }</div>
+    <h2>Another header 2 element shows that all will be styled by the
+         Type Selector.</h2>
+    <div class="myClass">This div has the myClass class associated to it. It will
+         be styled with the class selector .myClass { }</div>
+    <p class="myClass">This p element will also be styled by the same selector
+         that stlyed the above div: .myClass { }</p>
+    <div class="myClass">
+        <header><h3>This is a descendent h3 element of the div with the myClass
+             class.  This will be styled with the Descendant selector
+             .myClass h3 { } </h3>
+        </header>
+        <h3>Another h3 tag that is a direct child of the div with the myClass
+             class. This will be styled with the Child selector
+             .myClass > h3 { }</h3>
+        <p>This is a paragraph element which is adjacent to the h3 tag that was
+             just styled.  This will be styled with the Adjacent selector
+             h3+p { }</p>
+    </div>
+    <a href="#">This link will be styled differently based on the state it is in.
+         This is done by the pseudo-class selectors such as a:hover { }</a>
+
+    <table>
+        <tr><td>Key</td><td>Value</td></tr>
+        <tr><td>123</td><td>Roy</td></tr>
+        <tr><td>178</td><td>Roger</td></tr>
+        <tr><td>501</td><td>Tony</td></tr>
+        <tr><td>767</td><td>Chuck</td></tr>
+        <tr><td>900</td><td>Chad</td></tr>
+    </table>
+
+    <ul>
+        <li>Data 1</li>
+        <li>Data 2</li>
+        <li>Data 3</li>
+        <li>Data 4</li>
+        <li>Data 5</li>
+    </ul>
+
+    <ul>
+        <li>Nothing is available</li>
+    </ul>
+</body>
+</html>

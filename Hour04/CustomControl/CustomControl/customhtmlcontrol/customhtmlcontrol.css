@@ -1,0 +1,15 @@
+﻿.htmlcontrol_container {
+    border-radius: 25px;
+    border: 5px double green;
+    margin: 15px;
+}
+
+.htmlcontrol_welcomemessage {
+    font-weight: 800;   
+    padding: 15px;
+}
+
+.htmlcontrol_content {
+    color: green;
+    font-weight: 400;
+}

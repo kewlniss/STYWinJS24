@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FingerPainting</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- FingerPainting references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/messages.js"></script>
+    <script src="/js/utilities.js"></script>
+    <script src="/js/settings.js"></script>
+    <script src="/js/sessionstate.js"></script>
+    <script src="/js/filepicker.js"></script>
+    <script src="/js/camera.js"></script>
+    <script src="/js/print.js"></script>
+    <script src="/js/trialmanager.js"></script>
+    <script src="/js/colorpicker.js"></script>
+    <script src="/js/appbar.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+</head>
+<body>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/artboard/artboard.html'}"></div>
+
+
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" 
+            data-win-options="{ id:'cmdPickColor',
+                section: 'selection',
+                label:'Pick Color',
+                icon:'placeholder',
+                extraClass:'customColor' }">
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{ id:'cmdPickBrushSize',
+                section: 'selection',
+                label:'Pick Brush Size',
+                icon:'edit',
+                type:'flyout',
+                flyout:'brushSizeMenu'}"></button>
+
+        <hr data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{type:'separator',section:'selection'}" />
+        <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{ id:'cmdSave',
+                section: 'selection',
+                label:'Save',
+                icon:'save'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdClear', label:'Clear', icon:'clear'}"></button>
+        <hr data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{type:'separator',section:'global'}" />
+        <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{ id:'cmdTakePicture',
+                                label:'Take Picture', icon:'camera'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{ id:'cmdLoad', label:'Load', icon:'folder'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{ id:'cmdNew', label:'New', icon:'add'}"></button>
+    </div>
+
+    <div id="brushSizeMenu" data-win-control="WinJS.UI.Menu">
+        <button data-win-control="WinJS.UI.MenuCommand"
+             data-win-options="{ id:'cmdBrushSize5',
+             'datasize': '5', 
+             label:'Size: 5'}"></button>
+        <button data-win-control="WinJS.UI.MenuCommand"
+             data-win-options="{ id:'cmdBrushSize10',
+             'datasize': '10',
+             label:'Size: 10'}"></button>
+        <button data-win-control="WinJS.UI.MenuCommand"
+             data-win-options="{ id:'cmdBrushSize15',
+             'datasize': '15',
+             label:'Size: 15'}"></button>
+        <button data-win-control="WinJS.UI.MenuCommand"
+             data-win-options="{ id:'cmdBrushSize20',
+             'datasize': '20',
+             label:'Size: 20'}"></button>
+        <button data-win-control="WinJS.UI.MenuCommand"
+             data-win-options="{ id:'cmdBrushSize30',
+             'datasize': '30',
+             label:'Size: 30'}"></button>
+        <button data-win-control="WinJS.UI.MenuCommand"
+             data-win-options="{ id:'cmdBrushSize50',
+             'datasize': '50',
+             label:'Size: 50'}"></button>
+    </div>
+
+    <div id="pickColorFlyout" data-win-control="WinJS.UI.Flyout"
+                             aria-label="{Pick Color Flyout}"  >
+        <div id="palette">  
+            <div id ="selectedColor" style="top: 2px; left: 2px; width: 40px;
+                 height: 40px; background-color: #000000;"
+                 aria-labelledby="listLabel"></div>
+            <div style="width: 40px; height: 17px"><p id="listLabel">Color</p></div>
+  
+            <!-- Top row colors -->
+            <div id="#000000" class="color" style="top: -70px; left: 60px;
+                 background-color:#000000"></div>
+            <div id="#808080" class="color" style="top: -102px; left: 94px;
+                 background-color:#808080"></div>
+            <div id="#8b0000" class="color" style="top: -134px; left: 128px;
+                 background-color:#8b0000"></div>
+            <div id="#ff0000" class="color" style="top: -166px; left: 162px;
+                 background-color:#ff0000"></div>
+            <div id="#ffa500" class="color" style="top: -198px; left: 196px;
+                 background-color:#ffa500"></div>
+            <div id="#ffff00" class="color" style="top: -230px; left: 230px;
+                 background-color:#ffff00"></div>
+            <div id="#008000" class="color" style="top: -262px; left: 264px;
+                 background-color:#008000"></div>
+            <div id="#0000ff" class="color" style="top: -294px; left: 298px;
+                 background-color:#0000ff"></div>
+  
+            <!-- Bottom row colors -->
+            <div id="#ffffff" class="color" style="top: -292px; left: 60px;
+                 background-color:#ffffff"></div>
+            <div id="#c0c0c0" class="color" style="top: -324px; left: 94px;
+                 background-color:#c0c0c0"></div>
+            <div id="#955a5a" class="color" style="top: -356px; left: 128px;
+                 background-color:#955a5a"></div>
+            <div id="#ffc0cb" class="color" style="top: -388px; left: 162px;
+                 background-color:#ffc0cb"></div>
+            <div id="#ffd700" class="color" style="top: -420px; left: 196px;
+                 background-color:#ffd700"></div>
+            <div id="#adff2f" class="color" style="top: -452px; left: 230px;
+                 background-color:#adff2f"></div>
+            <div id="#00dd00" class="color" style="top: -484px; left: 264px;
+                 background-color:#00dd00"></div>
+            <div id="#ff00ff" class="color" style="top: -516px; left: 298px;
+                 background-color:#ff00ff"></div>
+        </div>
+    </div>
+
+
+    <div id="purchaseFlyout" data-win-control="WinJS.UI.Flyout">
+        <div>This feature is only available in the full version of the app.</div>
+        <div>Would you like to buy the app now?  It is only 
+            <span data-win-bind="innerText: STYWin.TrialManager.price"></span>.</div>
+        <button id="btnBuy">Go to Windows Store</button>
+    </div>
+
+    <div id="purchaseAddColorFlyout" data-win-control="WinJS.UI.Flyout">
+        <div>The colors on the bottom row can be purchased for
+           <span data-win-bind="innerText: STYWin.TrialManager.addColorPrice"></span>.
+        </div>
+        <div>Would you like to purchase the colors now?</div>
+        <button id="btnBuyColors">Go to Windows Store</button>
+    </div>
+</body>
+</html>

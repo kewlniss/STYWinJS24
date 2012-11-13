@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>IndexedDBExample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- IndexedDBExample references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="container">
+    <fieldset>
+        <legend>Data Entry Form</legend>
+        <label for="txtFirstName">
+            First Name:
+        </label>
+        <input type="text" id="txtFirstName" name="txtFirstName" autofocus="autofocus" />
+        <br />
+        <label for="txtLastName">
+            Last Name:
+        </label>
+        <input type="text" id="txtLastName" name="txtLastName" />
+        <br />
+        <label for="txtCustomerNumber">
+            Customer Number:
+        </label>
+        <input type="text" id="txtCustomerNumber" name="txtCustomerNumber" />
+        <br />
+        <label for="InvoiceDate">
+            Invoice Date:
+        </label>
+        <div id="InvoiceDate" data-win-control="WinJS.UI.DatePicker"></div>
+        <br />
+        <label for="txtEmail">
+            Email:
+        </label>
+        <input type="email" id="txtEmail" name="txtEmail" />
+        <br />
+        <input type="button" id="btnAdd" value="Add Record" />
+</fieldset>
+    <fieldset>
+        <legend>Retrieve Record</legend>
+
+        <label for="txtID">
+            ID:
+        </label>
+        <input type="text" id="txtID" name="txtID" />
+        <br />
+        <input type="button" id="btnGet" value="Get Record" />
+        <input type="button" id="btnDelete" value="Delete Record" />
+</fieldset>
+    <fieldset>
+        <legend>Get All Records</legend>
+
+        <input type="button" id="btnPrint" value="Print objectStore" />
+        <br />
+        <input type="button" id="btnAddAll" value="Add All Users" />
+        <br />
+        <output id="printOutput">
+        </output>
+        </fieldset>
+    </div>
+
+</body>
+</html>

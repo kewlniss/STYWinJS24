@@ -1,0 +1,69 @@
+﻿h1 {
+    padding-left: 120px;
+    margin-top: 40px;
+}
+
+#content {
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
+input[type=range].custom::-ms-fill-lower {
+    background-color: lightgreen;
+}
+
+input[type=range].custom::-ms-fill-upper {
+    background-color: green;
+}
+
+input[type=range].custom:hover::-ms-fill-lower {
+    background-color: lime ;
+}
+
+input[type=text].custom {
+    background-color: lightgreen;
+    color: green;
+    font-weight: bold;
+}
+
+input[type=text].custom:-ms-input-placeholder {
+    color: blue;
+    font-weight: normal;
+}
+
+input[type=text].custom::-ms-clear {
+    color: red;
+}
+
+progress.custom {
+    background-color: green;
+    color: lightgreen;
+}
+
+progress.custom.win-ring {
+    background-color: transparent;
+    color: green;
+}
+
+progress.custom.win-large {
+    color: green;
+    background-color: transparent;
+    height: 10px;
+}
+
+progress.win-large {
+    color: inherit;
+}
+
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

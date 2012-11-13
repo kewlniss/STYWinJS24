@@ -1,0 +1,25 @@
+﻿body {
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+.toanimate {
+	padding-left: 0px;
+	background-color: transparent;
+	transition: cubic-bezier(0.1, 0.9, 0.2, 1) padding-left 0.9s, ease-in-out background-color 500ms 0.25s;
+}
+
+.toanimate:hover {
+	padding-left: 500px;
+	background-color: darkgreen;
+}

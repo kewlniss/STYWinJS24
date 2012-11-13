@@ -1,0 +1,21 @@
+﻿body {    
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+    visibility: hidden;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

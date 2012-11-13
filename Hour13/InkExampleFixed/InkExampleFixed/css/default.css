@@ -1,0 +1,44 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;
+}
+
+.fixedlayout {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    height: 768px;
+    width: 1366px;
+}
+
+#canvas { -ms-touch-action: none; }
+
+#results { position: absolute; top: 718px; left: 0; width: calc(100% - 290px); }
+
+#btnSave {
+    position: absolute;
+    top: 722px;
+    left: calc(100% - 250px);
+    width: 250px;
+}
+
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

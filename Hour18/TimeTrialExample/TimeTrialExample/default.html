@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TimeTrialExample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- TimeTrialExample references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <p>Content goes here</p>
+
+<div id="purchaseFlyout" data-win-control="WinJS.UI.Flyout">
+    <div>You only have <span data-win-bind="innerText: 
+        STYWin.daysRemaining STYWin.daysRemainingConverter"></span> 
+        days remaining in your trial.</div>
+    <div>Once the trial is over you will no longer be able to run the app.</div>
+    <div>As long as the app is installed, any data you created will be preserved 
+        should you choose to purchase the app.  If the app is uninstalled, all 
+        data will be lost.</div>
+    <div>Would you like to buy the app now?  It is only 
+        <span data-win-bind="innerText: STYWin.price"></span>.</div>
+    <button id="btnBuy">Go to Windows Store</button>
+</div>
+</body>
+</html>

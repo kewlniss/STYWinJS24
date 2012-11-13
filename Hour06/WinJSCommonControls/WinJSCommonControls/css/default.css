@@ -1,0 +1,179 @@
+﻿body {
+    margin-left: 120px;
+}
+
+.win-datepicker {
+    display: block;
+    margin-top: 60px;
+}
+
+.message {
+    color: blue;
+    font-size: large;
+}
+
+/* Needed, or entire line will initiate tooltip */
+#toggleTooltip {
+    display: inline-block;
+}
+
+.flux .win-datepicker-month,
+.flux .win-datepicker-date,
+.flux .win-datepicker-year {
+    background-color: black;
+    color: yellow;
+}
+
+.flux select.win-datepicker-month::-ms-expand,
+.flux select.win-datepicker-date::-ms-expand,
+.flux select.win-datepicker-year::-ms-expand {
+    color: yellow;
+}
+
+.flux::before {
+    content: '\2622';
+    font-family: "Segoe UI Symbol";
+    font-size: 16pt;
+    color: black;
+    background-color: yellow;
+    vertical-align: middle;
+}
+
+.win-datepicker-month {
+    background-color: red;
+    color: white;
+}
+
+.win-datepicker-date {
+    background-color: white;
+    color: blue;
+}
+
+.win-datepicker-year {
+    background-color: blue;
+    color: white;
+}
+
+select.win-datepicker-year::-ms-expand,
+select.win-datepicker-month::-ms-expand {
+    color: white;
+}
+
+select.win-datepicker-date::-ms-expand {
+    color: blue;
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+}
+
+    button:hover {
+        background-color: lightgreen;
+        color: gray;
+    }
+
+    button:active:hover {
+    background-color: lime;
+    color: black;
+    }
+
+#htmlFragContent select.win-timepicker-period {
+    display: none;
+} 
+
+.win-rating {
+    padding: 10px 0;
+}
+
+.win-rating .win-star.win-user.win-full {
+    color: red;
+}
+
+.win-rating .win-star.win-tentative.win-full {
+    color: red;
+}
+
+.win-rating .win-star.win-average.win-full,
+.win-rating .win-star.win-average.win-full.win-disabled {
+    color: lightpink;
+}
+
+.win-rating .win-star:before {
+    content: "\E082";
+}
+
+#rating2 {
+    width: 120px;
+}
+
+#rating2.win-rating .win-star.win-user.win-full,
+#rating2.win-rating .win-star.win-tentative.win-full {
+    color: lime;
+}
+
+#rating2.win-rating .win-star.win-average.win-full,
+#rating2.win-rating .win-star.win-average.win-full.win-disabled {
+    color: darkgreen;
+}
+
+#rating2.win-rating .win-star:before {
+    font-family: "Segoe UI Symbol";
+    content: "\E07D";
+}
+
+.win-rating.heart .win-star:before {
+    content: ""; 
+}
+
+.win-rating.heart .win-star {
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: left;
+    width: 30px;
+    height:26px;                                             
+}
+
+.win-rating.heart .win-star.win-average.win-empty {
+    background-image:url("../images/controls/heart_rating_average_empty.png");
+}
+
+.win-rating.heart .win-star.win-average.win-full {
+    background-image:url("../images/controls/heart_rating_average_full.png");
+}
+
+.win-rating.heart .win-star.win-user.win-empty,
+.win-rating.heart .win-star.win-tentative.win-empty {
+    background-image:url("../images/controls/heart_rating_user_empty.png");
+}
+
+.win-rating.heart .win-star.win-user.win-full,
+.win-rating.heart .win-star.win-tentative.win-full {
+    background-image:url("../images/controls/heart_rating_user_full.png");
+}
+
+.win-rating.heart .win-star.win-disabled.win-empty {
+    background-image:url("../images/controls/heart_rating_disabled_empty.png");
+}
+
+.win-rating.heart .win-star.win-disabled.win-full {
+    background-image:url("../images/controls/heart_rating_disabled_full.png");
+}
+
+#toggleSwitch .win-switch::-ms-fill-lower {
+    background-color: yellow;
+}
+
+#toggleSwitch .win-switch::-ms-fill-upper {
+    background-color: lightyellow;
+}
+
+.autosaveTooltip {
+    border-radius: 25px;
+    max-width: 140px;
+    padding: 10px;
+    border: 1px solid #333;
+    background-image: linear-gradient(315deg, orange, yellow);
+    box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.4);
+    text-align: center;    
+}

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DataBindingExample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <script src="/js/person.js"></script>
+
+    <!-- DataBindingExample references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <h1 id="target" data-win-bind="innerText: STYWin.OneTime.source"></h1>
+
+    <div data-win-control="WinJS.UI.ToggleSwitch"
+            data-win-options="{labelOn: 'Yes', labelOff: 'No', title: 'Autosave'}"
+            data-win-bind="winControl.title: STYWin.OneTime.source;
+                           winControl.checked: STYWin.OneTime.chk">
+    </div>
+
+    <div data-win-bind=
+        "innerText: STYWin.OneTime.funds STYWin.Utility.formatCurrency"></div>
+
+    <div data-win-bind="innerText: STYWin.ViewModel.currentDate"></div>
+    <div data-win-bind="innerText: STYWin.ViewModel.currentTime"></div>
+
+
+    <div id="renderTarget"></div>
+
+    <div id="templateDiv" data-win-control="WinJS.Binding.Template">
+        <div class="templateItem" data-win-bind="style.borderColor: color">
+            <ul>
+                <li><span>Name: </span>
+                    <span data-win-bind="textContent: name"></span></li>
+                <li><span>Birthday: </span>
+                    <span data-win-bind="textContent: birthday"></span></li>
+                <li><span>Available Funds: </span>
+                    <span data-win-bind=
+                        "textContent: funds STYWin.Utility.formatCurrency">
+                    </span></li>
+                <li><div data-win-bind="style.background: color"></div></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

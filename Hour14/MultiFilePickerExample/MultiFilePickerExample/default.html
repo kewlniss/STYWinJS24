@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MultiFilePickerExample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <script src="/js/imagesViewer.js"></script>
+
+    <!-- MultiFilePickerExample references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="imageTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="itemContainer">
+            <img src="#" data-win-bind="src: path; alt: displayName" />
+            <div class="overlay">
+                <h2 class="name" data-win-bind="innerText: name"></h2>
+            </div>
+        </div>
+    </div>
+
+    <div data-win-control="WinJS.UI.ViewBox">
+        <div id="flipView" 
+            data-win-control="WinJS.UI.FlipView"
+            data-win-options="{ itemTemplate : imageTemplate }">
+        </div>
+    </div>
+
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{id:'btnOpen', label:'Open', icon:'folder'}"
+            type="button">
+        </button>
+    </div>
+</body>
+</html>

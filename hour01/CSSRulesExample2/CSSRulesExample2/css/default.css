@@ -1,0 +1,46 @@
+﻿body {
+    margin-left: 120px;
+    margin-top: 60px;
+    -ms-user-select: text;
+}
+
+article {
+    margin-top: 40px;
+}
+
+article:first-child ::first-letter {
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+p::first-letter {
+    color: blue;
+}
+
+article > header + p::first-letter  {
+    font-size: x-large;
+    font-weight: 800;
+}
+
+article > header + p::first-line  {
+    color: brown;
+}
+
+article:last-child h2::before { 
+    content: "NEW! "; 
+    background-color: yellow;    
+}
+
+footer::before { 
+    content: " -"; 
+}
+
+footer::after { 
+    content: " created this post"; 
+    font-size: small;
+}
+
+::selection {
+    background-color: green;   
+}
+

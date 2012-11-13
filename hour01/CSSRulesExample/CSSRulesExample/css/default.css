@@ -1,0 +1,80 @@
+﻿body {
+    margin-left: 20px;
+}
+
+h2 {
+    font-size:xx-large;
+}
+
+#myID {
+    color: red;
+}
+
+.myClass {
+    color: blue;
+}
+
+.myClass h3 {
+    color: orange;
+}
+
+.myClass > h3 {
+    text-decoration: underline;
+}
+
+h3 + p {
+    color: green;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    border: 2px solid gray;
+}
+
+a:active {
+    background-color: yellow;
+}
+
+tr:first-child {
+    font-size: x-large;
+}
+
+tr:last-child {
+    font-size: x-small;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    font-size: xx-large;
+}
+
+/* Notice, this comes after first and last and also 
+    resets values they set (font-size and color) since 
+    an only child is also a first and last child */
+li:only-child {
+    color: black; /*reset first child color */
+    font-size:medium; /* reset last child size*/
+    
+    /* make only child background pink */
+    background-color: pink;
+    /* don't have a bullet point */
+    list-style-type: none;
+    width: 200px;
+}
+
+tr:nth-child(odd) td {
+    background-color: linen;
+}
+
+li:nth-child(3n+2) {
+    background-color: blue;
+    color: white;
+    width: 200px;
+}
+

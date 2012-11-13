@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CompassExample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- CompassExample references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div data-win-control="WinJS.UI.ViewBox">
+        <div class="fixedlayout">
+            <svg>
+                <rect x="0" y="0" width="500" height="500" style="fill: blue"></rect>
+
+                <circle cx="250" cy="250" r="200" stroke="black"
+                    stroke-width="2" fill="white"></circle>
+
+                    <line x1="250" y1="50" x2="250" y2="250" transform="rotate(0 250 250)"
+                        style="stroke: red; stroke-width: 15">
+                </line>
+
+                <text x="247" y="40" style="stroke: red; stroke-width: 3">N</text>
+
+                <text id="angle" x="247" y="470" style="stroke: black"></text>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

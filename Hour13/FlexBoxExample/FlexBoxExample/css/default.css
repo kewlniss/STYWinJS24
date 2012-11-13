@@ -1,0 +1,34 @@
+﻿body {
+    margin-top: 30px;
+    font-size: xx-large;
+}
+    
+.flexbox {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;
+}
+
+.flex2,.flex3 {
+    -ms-flex-align: center;
+    -ms-flex-direction: row;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;
+}
+
+.flex3 {
+    -ms-flex-direction: row-reverse;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

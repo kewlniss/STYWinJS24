@@ -1,0 +1,48 @@
+﻿body {
+    margin-left: 120px;
+    margin-top: 60px;
+}
+
+/* override html control */
+.htmlcontrol_container {
+	margin: 5px;  
+    padding: 10px;     
+    width: 400px;
+    text-align: center;
+    border: 5px double yellow;
+}
+
+
+#mynewhtmlcontrol .htmlcontrol_container {
+    border: 5px double purple;
+}
+
+#mynewhtmlcontrol .htmlcontrol_content {
+    color: orange;
+}
+
+#mynewhtmlcontrol .htmlcontrol_welcomemessage {
+    color:#b200ff;
+}
+
+
+#placeholder {
+    color: orange;
+    font-weight: 900;
+    font-size: large;
+}
+.mystyle {
+    color: blue;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

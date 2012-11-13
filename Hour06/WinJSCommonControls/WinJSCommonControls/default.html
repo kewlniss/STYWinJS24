@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WinJSCommonControls</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- WinJSCommonControls references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="dates">
+        <div class="flux" data-win-control="WinJS.UI.DatePicker" 
+             data-win-options='{current: "November 5, 1955" }'></div>
+    </div>
+
+    <div id="purchaseItem">
+        <div id="purchaseItemMessage" class="message"></div>
+        <button id="btnBuyItem">Purchase great item for $5.95</button>
+
+        <div id="confirmPurchaseFlyout" data-win-control="WinJS.UI.Flyout">
+            <div>Purchase this item for $5.95</div>
+            
+            <button id="btnConfirmPurchase">
+                Purchase Item</button>
+        </div>
+    </div>
+
+    <div id="htmlFragContent" data-win-control="WinJS.UI.HtmlControl"
+                              data-win-options="{uri: '/htmlFrag.html'}"> </div>
+    
+    <div id="menuDemo">
+        <div id="menuMessage" class="message"></div>
+        <button id="btnShowMenu">Display Menu</button>
+        <div id="contextMenu" data-win-control="WinJS.UI.Menu">
+            <button data-win-control="WinJS.UI.MenuCommand" data-option="One"
+                data-win-options="{id:'cmdOption1', label:'Option: 1'}"></button>
+            <button data-win-control="WinJS.UI.MenuCommand" data-option="Two"
+                data-win-options="{id:'cmdOption2', label:'Option: 2'}"></button>
+            <button data-win-control="WinJS.UI.MenuCommand" data-option="Three"
+                data-win-options="{id:'cmdOption3', label:'Option: 3'}"></button>
+        </div>
+    </div>
+
+    <div>
+        <div id="rating1" data-win-control="WinJS.UI.Rating"
+           data-win-options="{maxRating: 3, averageRating: 2.7, userRating: 3}">
+        </div>
+    </div>
+    <div>
+        <div id="rating2" data-win-control="WinJS.UI.Rating"
+           data-win-options="{maxRating: 3, averageRating: 2.7, userRating: 1}">
+        </div>
+    </div>
+    <div>
+        <div class="heart" id="rating3" data-win-control="WinJS.UI.Rating"
+      data-win-options="{maxRating: 3, averageRating: 2.7, enableClear: false}">
+        </div>
+    </div>
+
+    <div id="toggleTooltip" data-win-control="WinJS.UI.Tooltip"
+        data-win-options="{innerHTML: 'Will be overwritten...', 
+            placement: 'right', extraClass: 'autosaveTooltip'}">
+        <div id="toggleSwitch" data-win-control="WinJS.UI.ToggleSwitch"
+           data-win-options="{labelOn: 'Yes', labelOff: 'No',
+             title: 'Autosave &#xE105;'}">
+        </div>
+    </div>
+</body>
+</html>

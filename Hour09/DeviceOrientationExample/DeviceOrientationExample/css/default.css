@@ -1,0 +1,67 @@
+﻿body {
+}
+
+.container {
+    display: -ms-grid;
+    -ms-grid-rows: 1f 1f;
+    -ms-grid-columns: 1f 1f 1f;
+    
+    width: 100%;
+    height: calc(100% - 120px);
+}
+
+.toy {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+
+    transform: rotate(0deg);      
+}
+
+#toy1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+#toy2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+#toy3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+#toy4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+#toy5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+
+#toy6 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+}
+
+
+#lblDetail, #lblGyroDetail {
+    font-family: 'Courier New';
+    color: orange;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

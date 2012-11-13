@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>StyleIntrinsicHTMLControlsExample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- StyleIntrinsicHTMLControlsExample references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <h1>Style Intrinsic HTML Controls Example</h1>
+    <div id="content">
+        <div>
+            <progress value="45" max="100"></progress>
+        </div>
+        <div>
+            <input type="range" max="11" min="0" value="7" />
+        </div>
+        <div>
+            <input type="text" placeholder="enter your name" />
+        </div>
+        <div>
+            <progress class="win-ring"></progress>
+        </div>
+        <div>
+            <progress></progress>
+        </div>
+        <div>
+            <label>
+                <progress class="win-ring"></progress>
+                Fetching ...
+            </label>
+        </div>
+
+        <div>
+            <progress class="custom" value="45" max="100"></progress>
+        </div>
+        <div>
+            <input class="custom" type="range" max="11" min="0" value="7" />
+        </div>
+        <div>
+            <input class="custom" type="text" placeholder="enter your name" />
+        </div>
+        <div>
+            <progress class="custom win-ring"></progress>
+        </div>
+        <div>
+            <progress class="custom win-large"></progress>
+        </div>
+        <div>
+            <label class="win-type-xx-large">
+                <progress class="win-ring win-large"></progress>
+                Fetching ...
+            </label>
+        </div>
+    </div>
+</body>
+</html>

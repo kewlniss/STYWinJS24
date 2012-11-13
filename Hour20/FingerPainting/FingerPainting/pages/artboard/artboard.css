@@ -1,0 +1,32 @@
+﻿body {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;   
+    
+    background-color: #222;
+    -ms-touch-action: none;
+}
+
+.fixedlayout {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    width: 1920px;
+    height: 1080px;
+}
+
+
+#palette {
+    border: 1px solid gray;
+    height: 70px;
+    width: 330px;
+    padding: 2px;
+}
+
+.color {
+    position: relative;
+    border: 1px solid gray; 
+    height: 30px; 
+    width: 30px; 
+}

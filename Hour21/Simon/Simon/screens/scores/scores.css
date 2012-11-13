@@ -1,0 +1,78 @@
+﻿.scores p {
+    margin-left: 120px;
+}
+
+.scores p,
+.scores table {
+    margin-left: 120px;
+    width: calc(100%-120px);
+    border-spacing: 0px;
+}
+
+section {
+    overflow: auto;   
+}
+
+.scores table tr {
+    text-align: center;
+    font-size: x-large;
+}
+
+.scores table th {
+    border-bottom: 8px double black;
+
+}
+
+.scores table th,
+.scores table tr:nth-child(4n+1) td {
+    background-color: yellow;
+    color: black;
+}
+.scores table tr:nth-child(4n+2) td {
+    background-color: blue;
+    color: white;
+}
+.scores table tr:nth-child(4n+3) td {
+    background-color: green;
+    color: white;
+}
+.scores table tr:nth-child(4n+4) td {
+    background-color: red;
+    color: white;
+}
+
+.scores table tr th:last-child,
+.scores table tr td:last-child {
+    width: 440px;
+}
+
+.scores table tr th,
+.scores table tr td {
+    width: 340px;
+    height: 90px;
+}
+
+.scores p,
+.scores table tr th {
+    font-size: xx-large;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .scores p,
+    .scores table {
+        margin-left: 20px;
+    }
+
+    .scores table tr {
+        font-size: medium;
+    }
+
+    .scores th,
+    .scores td {
+        width: 100px;
+    }
+
+    .scores th {
+        font-size: large;
+    }
+}

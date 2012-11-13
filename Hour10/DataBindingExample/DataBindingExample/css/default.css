@@ -1,0 +1,29 @@
+﻿body {
+    margin: 30px;
+    overflow-y: scroll;
+}
+
+.templateItem {
+    border: 2px dashed black;
+    border-radius: 25px;
+    
+    width: 400px;
+}
+
+.templateItem li div {
+    width: 200px;
+    height: 40px;
+}
+
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

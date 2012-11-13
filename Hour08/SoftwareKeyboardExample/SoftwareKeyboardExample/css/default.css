@@ -1,0 +1,63 @@
+﻿body {
+}
+
+body {
+    overflow: auto;
+}
+
+#nothing {
+    height: 25%;
+    width: 100%;
+    background-color: blue;
+}
+
+#morenothing {
+    height: 55%;
+    width: 100%;
+    background-color: orange;
+}
+
+#sniffer {
+    width: 100%;
+    background-color: linen;
+    display: block;
+    color: black;
+}
+
+#customtextbox {
+    width: calc(100% - 50px);
+    height: 200px;
+    background-color: white;
+    color: black;
+    overflow-wrap: normal;
+    overflow-y: auto;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+fieldset {
+    border-radius: 25px;
+}
+
+label {
+    width: 200px;
+    text-align: right;
+    display: inline-block;
+}
+
+input[type] {
+    margin-left: 20px;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

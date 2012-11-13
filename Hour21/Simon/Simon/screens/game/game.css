@@ -1,0 +1,12 @@
+﻿.game p {
+    margin-left: 120px;
+}
+
+.game {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+}
+.game section[role=main] {
+    z-index: -1;
+}

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>profilel</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="profile.css" rel="stylesheet" />
+    <script src="profile.js"></script>
+</head>
+<body>
+    <div class="profilel fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to profilel</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <fieldset>
+                <legend>Enter Your Profile Information</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" autofocus="autofocus" />
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+                <div>
+                    <label for="homepage">Home Page:</label>
+                    <input type="url" id="homepage" name="homepage" />
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" />
+                </div>
+                <div>
+                    <label for="favoritenumber">Favorite Number:</label>
+                    <input type="number" id="favoritenumber" name="favoritenumber" />
+                </div>
+            </fieldset>
+        </section>
+    </div>
+</body>
+</html>

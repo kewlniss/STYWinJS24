@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>RSSReader</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- RSSReader references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/js/sessionstate.js"></script>
+    <script src="/js/utility.js"></script>
+    <script src="/pages/search/searchResults.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/js/appbar.js"></script>
+</head>
+<body>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/groupedItems/groupedItems.html'}"></div>
+
+    <div id="nonCriticalError" data-win-control="WinJS.UI.Flyout"
+         aria-label="{Non-Critical Error}" >
+        <div id="errormessage"></div>
+    </div>
+
+    <div id="addFeedFlyout" data-win-control="WinJS.UI.Flyout"
+         aria-label="{Add RSS Feed Flyout}" >
+        <div><input id="rssFeedUrl" type="url" placeholder="RSS Feed URL"
+             required="required" /></div>
+        <div><button id="addRSSFeed">Add RSS Feed</button></div>
+    </div>
+
+    <div id="deleteFeedFlyout" data-win-control="WinJS.UI.Flyout"
+                                     aria-label="{Delete RSS Feed Flyout}"  >
+        <div>Remove the feed from your list.</div>
+        <div><button id="deleteRSSFeed">Delete Feed</button></div>
+    </div>
+
+
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand"
+             data-win-options="{id:'cmdAdd',label:'Add',icon:'add',section:'global',
+            tooltip:'Add Feed', type:'flyout', flyout: 'addFeedFlyout'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand"
+             data-win-options="{id:'cmdView', label:'View', section:'selection', 
+            icon:'view', extraClass:'postSelect', 
+            tooltip:'View Post in Browser'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand"
+             data-win-options="{id:'cmdSort',label:'Sort',icon:'sort',
+            section:'selection',extraClass:'feedSort',
+             tooltip:'Sort Feeds'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" 
+             data-win-options="{id:'cmdDelete',label:'Delete',icon:'delete',
+            section:'selection',extraClass:'feedSelect',
+            tooltip:'Delete Feed', type:'flyout', flyout: 'deleteFeedFlyout'}"></button>
+    </div>
+</body>
+</html>

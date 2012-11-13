@@ -1,0 +1,17 @@
+﻿body {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;   
+    
+    background-color: #222;
+    -ms-touch-action: none;
+}
+
+.fixedlayout {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    width: 1920px;
+    height: 1080px;
+}

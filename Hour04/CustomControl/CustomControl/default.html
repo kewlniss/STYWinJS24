@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CustomControl</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Simple Custom Control Written in Global Space -->
+    <script src="simplecustomcontrol/simplecustomcontrol.js"></script>
+
+    <!-- Simple Custom Control in a Namespace-->
+    <script src="namespacecustomcontrol/namespacecustomcontrol.js"></script>
+
+    <!-- Custom Date Control with referenced Utility class -->
+    <link rel="stylesheet" type="text/css" 
+        href="customdatecontrol/customdatecontrol.css" />
+    <script src="customdatecontrol/utility.js"></script>
+    <script src="customdatecontrol/customdatecontrol.js"></script>
+
+    <!-- Custom HTML Control stylesheet -->
+    <link rel="stylesheet" type="text/css" 
+        href="customhtmlcontrol/customhtmlcontrol.css" />
+
+     <!-- Our App references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+
+</head>
+<body>
+    <div data-win-control="SimpleCustomControl"></div>
+
+    <div id="placeholder"></div>
+
+    <div id="namespacecustomcontrol" 
+        data-win-control="STYWin.UI.NameSpaceCustomControl"></div>
+
+    <div id="dateControl" data-win-control="STYWin.UI.CustomDateControl"
+                          data-win-options="{ yearFormat: 4}" ></div>
+
+    <!-- HTML Control -->
+    <div data-win-control="WinJS.UI.HtmlControl" 
+         data-win-options="{ uri: '/customhtmlcontrol/customhtmlcontrol.html' }">
+    </div>
+</body>
+</html>

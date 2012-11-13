@@ -1,0 +1,18 @@
+﻿body {
+    margin-left: 120px;
+}
+
+.win-datepicker {
+    display: block;
+    margin-top: 60px;
+}
+
+.message {
+    color: blue;
+    font-size: large;
+}
+
+/* Needed, or entire line will initiate tooltip */
+#toggleTooltip {
+    display: inline-block;
+}

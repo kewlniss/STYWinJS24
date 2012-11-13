@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>game</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="game.css" rel="stylesheet" />
+    <script src="game.js"></script>
+</head>
+<body>
+    <div class="game fragment">
+        <div id="blue"></div>
+        <div id="red"></div>
+        <div id="green"></div>
+        <div id="yellow"></div>
+
+        <audio id="blueSound">
+            <source src="/sounds/blue.mp3" type="audio/mp3" />
+        </audio>
+        <audio id="redSound">
+            <source src="/sounds/red.mp3" type="audio/mp3" />
+        </audio>
+        <audio id="greenSound">
+            <source src="/sounds/green.mp3" type="audio/mp3" />
+        </audio>
+        <audio id="yellowSound">
+            <source src="/sounds/yellow.mp3" type="audio/mp3" />
+        </audio>
+        <audio id="wrongSound">
+            <source src="/sounds/wrong.mp3" type="audio/mp3" />
+        </audio>
+
+        <div id="headerAppBar" data-win-control="WinJS.UI.AppBar"
+                aria-label="Navigation Bar"
+            data-win-options="{layout:'custom',placement:'top'}">
+
+            <header aria-label="Header content" role="banner">
+                <button class="win-backbutton" aria-label="Back" 
+                    disabled type="button"></button>
+                <h1 class="titlearea win-type-ellipsis">
+                    <span class="pagetitle">Leaving? Don't Go...</span>
+                </h1>
+            </header>
+        </div>
+        <section aria-label="Main content" role="main">
+        </section>
+    </div>
+</body>
+</html>

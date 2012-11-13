@@ -1,0 +1,11 @@
+﻿[{ "name": "Bill", "color": "green", "birthday": "9/5/1981", "funds": 100 },
+{ "name": "Clark", "color": "yellow", "birthday": "8/27/1971", "funds": 23.7 },
+{ "name": "Doug", "color": "blue", "birthday": "1/12/1996", "funds": 12 },
+{ "name": "Elissa", "color": "pink", "birthday": "12/31/1999", "funds": 99.99 },
+{ "name": "Jill", "color": "orange", "birthday": "2/19/1990", "funds": 45.5 },
+{ "name": "Adam", "color": "blue", "birthday": "5/1/1945", "funds": 1009.4 },
+{ "name": "Frank", "color": "orange", "birthday": "4/1/1950", "funds": 402.95 },
+{ "name": "David", "color": "linen", "birthday": "3/2/1984", "funds": 103.42 },
+{ "name": "Brian", "color": "green", "birthday": "7/1/1971", "funds": 69.49 },
+{ "name": "Jacob", "color": "black", "birthday": "6/14/1999", "funds": 559.7 },
+{ "name": "Andrew", "color": "brown", "birthday": "10/16/1967", "funds": 99.99 }]

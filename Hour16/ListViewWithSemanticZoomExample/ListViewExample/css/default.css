@@ -1,0 +1,126 @@
+﻿body {
+}
+
+#page {    
+    height: 100%;
+    width: 100%;
+    display: -ms-grid;
+    -ms-grid-rows: 128px 1fr;
+    -ms-grid-columns: 1fr;
+}
+
+.templateItem {
+    border: 2px dashed black;
+    border-radius: 25px;
+    
+    width: 400px;
+}
+
+.templateItem li div {
+    width: 200px;
+    height: 40px;
+}
+
+#simpleListView {
+    -ms-grid-row: 2;
+    height: 100%;
+    width: 100%;
+}
+
+header[role=banner] {
+    display: -ms-grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 120px 1fr;
+}
+
+    header[role=banner] .win-backbutton {
+        margin-left: 39px;
+        margin-top: 59px;
+    }
+
+    header[role=banner] .titlearea {
+        -ms-grid-column: 2;
+        margin-top: 37px;
+    }
+
+        header[role=banner] .titlearea .pagetitle {
+            width: calc(100% - 20px);
+        }
+
+ #simpleListView .win-horizontal.win-viewport .win-surface {
+    margin-left: 45px;
+    margin-bottom: 60px;
+}
+
+#zoomedOutView .win-horizontal.win-viewport .win-surface {
+    margin-left: 120px;
+    margin-bottom: 60px;
+}
+
+.zoomedOutItem {
+    text-align: center;
+	display: table-row;
+}
+
+    .zoomedOutItem p {
+        background-color: cornflowerblue;
+        width: 250px;
+        height: 250px;
+        font-size: xx-large;
+        color: black;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.win-semanticzoom {
+   -ms-grid-row: 2;
+   height: 100%;
+}
+
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+    header[role=banner] {
+        -ms-grid-columns: 20px 1fr;
+    }
+
+        header[role=banner] .win-backbutton {
+            margin: 0;
+            margin-right: 10px;
+            margin-top: 76px;
+        }
+        
+.templateItem {
+    width: 280px;
+}
+/*
+#zoomedOutView .win-vertical.win-viewport .win-surface {
+    margin-left: 20px;
+}
+    */
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    
+    header[role=banner] {
+        -ms-grid-columns: 100px 1fr;
+    }
+
+        header[role=banner] .win-backbutton {
+            margin-left: 29px;
+        }
+        
+    #simpleListView .win-horizontal.win-viewport .win-surface {
+    margin-left: 25px;
+}
+
+    #zoomedOutView .win-horizontal.win-viewport .win-surface {
+        margin-left: 100px;
+        margin-bottom: 0;
+    }
+}

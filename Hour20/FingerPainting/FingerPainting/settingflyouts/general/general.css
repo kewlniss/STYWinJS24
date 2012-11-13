@@ -1,0 +1,14 @@
+﻿#backgroundPalette, #settingsPalette {
+    border: 1px solid gray;
+    height: 70px;
+    width: 330px;
+    padding: 2px;
+    padding-top: 25px;
+}
+
+.color {
+    position: relative;
+    border: 1px solid gray; 
+    height: 30px; 
+    width: 30px; 
+}

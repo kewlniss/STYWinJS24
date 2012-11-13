@@ -1,0 +1,7 @@
+﻿body {
+    margin: 120px;
+}
+
+input[type="password"] {
+    background-color: lightgreen;
+}

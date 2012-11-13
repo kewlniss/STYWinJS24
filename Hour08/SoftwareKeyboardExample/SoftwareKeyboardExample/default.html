@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SoftwareKeyboardExample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- SoftwareKeyboardExample references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="nothing"></div>
+    <div id="morenothing"></div>
+    <fieldset>
+        <legend>Data Entry Form</legend>
+        <div>
+            <label for="name">Name:</label><input type="text" id="name" name="name" autofocus="autofocus" />
+        </div>
+        <div>
+            <label for="phone">Phone:</label><input type="tel" id="phone" name="phone" />
+        </div>
+        <div>
+            <label for="email">Email:</label><input type="email" id="email" name="email" />
+        </div>
+        <div>
+            <label for="homepage">Home Page:</label><input type="url" id="homepage" name="homepage" />
+        </div>
+        <div>
+            <label for="password">Password:</label><input type="password" id="password" name="password" />
+        </div>
+        <div>
+            <label for="favoritenumber">Favorite Number:</label><input type="number" id="favoritenumber" name="favoritenumber" />
+        </div>
+    </fieldset>
+    <div id="sniffer"></div>
+    <div id="customtextbox" contenteditable="true" role="textbox" spellcheck="true"></div>
+</body>
+</html>
